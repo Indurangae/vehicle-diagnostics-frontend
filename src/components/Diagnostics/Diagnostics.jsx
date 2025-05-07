@@ -21,7 +21,7 @@ const Diagnostics = () => {
   useEffect(() => {
     if (issue.length > 2) {
       axios
-        .get(`http://localhost:5000/api/diagnostics/issues?make=${make}&model=${model}&query=${issue}`)
+        .get(`${CONFIG.API_BASE_URL}/api/diagnostics/issues?make=${make}&model=${model}&query=${issue}`)
         .then((response) => setSuggestions(response.data))
         .catch((err) => {
           setError("Failed to fetch issue suggestions");
@@ -35,7 +35,7 @@ const Diagnostics = () => {
   const handleIssueClick = (clickedIssue) => {
     setSelectedIssue(clickedIssue);
     axios
-      .get(`http://localhost:5000/api/diagnostics/solutions?make=${make}&model=${model}&issue=${clickedIssue}`)
+      .get(`${CONFIG.API_BASE_URL}/api/diagnostics/solutions?make=${make}&model=${model}&issue=${clickedIssue}`)
       .then(res => setSolutions(res.data))
       .catch(err => {
         console.error("Failed to fetch solutions:", err);
