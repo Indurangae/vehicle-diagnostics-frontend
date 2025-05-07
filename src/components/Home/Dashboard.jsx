@@ -12,7 +12,7 @@ const Dashboard = () => {
 
   // Fetch vehicle makes from backend
   useEffect(() => {
-    fetch("http://localhost:5000/api/vehicles/make")
+    fetch(`${CONFIG.API_BASE_URL}/api/vehicles/make`)
       .then((response) => response.json())
       .then((data) => setMakes(data))
       .catch((error) => console.error("Error fetching makes:", error));
@@ -21,7 +21,7 @@ const Dashboard = () => {
   // Fetch models based on selected make
   useEffect(() => {
     if (selectedMake) {
-      fetch(`http://localhost:5000/api/vehicles/models?make=${selectedMake}`)
+      fetch(`${CONFIG.API_BASE_URL}/api/vehicles/models?make=${selectedMake}`)
         .then((response) => response.json())
         .then((data) => setModels(data))
         .catch((error) => console.error("Error fetching models:", error));
