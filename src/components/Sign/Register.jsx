@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./Register.css"; // Scoped CSS import
+import CONFIG from '../../config';
 
 const Register = () => {
   const [name, setName] = useState("");
