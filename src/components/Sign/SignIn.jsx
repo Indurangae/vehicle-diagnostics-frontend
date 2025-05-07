@@ -17,7 +17,7 @@ const SignIn = () => {
     }
 
     try {
-      const res = await axios.post(`${CONFIG.API_BASE_URL}/api/signin`, {
+      const res = await axios.post(`${CONFIG.API_BASE_URL}/api/login`, {
         email,
         password,
       });
