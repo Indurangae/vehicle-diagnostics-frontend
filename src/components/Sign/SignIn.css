@@ -1,0 +1,72 @@
+/* Scoped styles for SignIn component */
+.signin-container {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .signin-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .signin-box h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .signin-box input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .signin-box button {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signin-box button:hover {
+    background-color: #45a049;
+  }
+  
+  .signin-box p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  @media (max-width: 600px) {
+    .signin-box {
+      padding: 1.5rem;
+    }
+  
+    .signin-box h2 {
+      font-size: 1.5rem;
+    }
+  
+    .signin-box input,
+    .signin-box button {
+      width: 100%;
+      max-width: none;
+    }
+  }
+  

@@ -1,0 +1,135 @@
+.maintenance-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: url('/public/images/maintenance-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+  }
+  
+  .maintenance-header {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .maintenance-header h2 {
+    font-size: 32px; 
+    margin-bottom: 28px;
+  }
+  
+  .user-info {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 15px;
+    margin: 15px auto;
+    max-width: 600px; 
+  }
+  
+  .welcome-text {
+    font-size: 21px; 
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+  }
+  
+  .logout-button {
+    padding: 10px 12px; 
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px; 
+    max-width: 90px;
+  }
+  
+  
+  .maintenance-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+  }
+  
+  .input-section,
+  .result-section {
+    flex: 1;
+    min-width: 260px;
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .image-section {
+    flex: 1;
+    min-width: 260px;
+    text-align: center;
+  }
+  
+  .image-section img {
+    max-width: 100%;
+    max-height: 220px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4fd1c5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #43b5a9;
+  }
+  
+  .error {
+    color: #ff4d4d;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .maintenance-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    input,
+    button {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .logout-button {
+      width: auto;
+      min-width: 100px;
+    }
+  }
+  

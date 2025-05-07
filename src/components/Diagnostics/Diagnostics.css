@@ -1,0 +1,75 @@
+.diagnostics-container {
+    display: flex;
+    gap: 40px;
+    padding: 30px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  
+  .left-panel {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .right-panel {
+    width: 550px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .vehicle-image {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .input-field {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  /* Suggestions (clickable items) */
+  .suggestion-item {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0077cc;
+    margin-bottom: 8px;
+  }
+  
+  .suggestion-item:hover {
+    color: #005fa3;
+  }
+  
+  /* Solutions (not clickable) */
+  .solution-item {
+    cursor: default;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 8px;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    .diagnostics-container {
+      flex-direction: column;
+      padding: 15px;
+    }
+  
+    .right-panel {
+      position: static;
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    .vehicle-image {
+      max-width: 100%;
+    }
+  }
+  
