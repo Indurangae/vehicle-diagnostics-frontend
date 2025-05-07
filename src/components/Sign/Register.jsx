@@ -16,7 +16,7 @@ const Register = () => {
     }
 
     try {
-      await axios.post("http://localhost:5000/api/register", {
+      await axios.post(`${CONFIG.API_BASE_URL}/api/register`, {
         name,
         email,
         password,
