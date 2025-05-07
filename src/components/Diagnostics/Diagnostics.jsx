@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
 import './Diagnostics.css'; 
+import CONFIG from '../../config';
 
 
 const Diagnostics = () => {
