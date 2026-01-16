@@ -1,0 +1,28 @@
+## 🚀 Live Demo
+
+👉 https://vehicle-diagnostics-frontend.vercel.app/
+
+### Demo Account
+Email: demo@demo.com  
+Password: demo123
+
+> Note: This is a demonstration account with sample vehicle data.
+
+## About The Project
+
+Vehicle Diagnostics Platform that analyses vehicle data and predicts maintenance needs using a Machine Learning API.
+
+### Features
+- User authentication  
+- Vehicle dashboard  
+- Diagnostic reports  
+- ML-based maintenance prediction  
+- Responsive UI  
+- REST API integration
+
+### Tech Stack
+- React  
+- JavaScript  
+- REST API  
+- CSS / Tailwind  
+- Vercel Deployment
